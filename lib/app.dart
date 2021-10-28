@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:my_farm/config/app.dart' as app_config;
+import 'config/app.dart' as app_config;
+import 'pages/dashboard/view/dashboard_view.dart';
 
 class App extends StatelessWidget {
   final Widget appTitle = const Text(app_config.appName);
@@ -13,7 +14,7 @@ class App extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: appTitle),
         body: const Center(
-          child: Text('Under construction'),
+          child: DashboardView(),
         ),
       ),
     );
