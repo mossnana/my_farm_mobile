@@ -1,0 +1,22 @@
+name: Deploy-Github-Page
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v2
+      - name: Install and Set Flutter version
+        uses: subosito/flutter-action@v1.4.0
+      - name: Restore packages
+        uses: flutter pub get
+      - name: Build and Deploy
+        uses: bluefireteam/flutter-gh-pages@v7
+        with:
+          baseHref: /my_farm_mobile/
