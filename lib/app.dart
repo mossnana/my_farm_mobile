@@ -13,7 +13,7 @@ class App extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: appTitle),
         body: const Center(
-          child: Text('Under Constructor'),
+          child: Text('Under construction'),
         ),
       ),
     );
