@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import '../../../helper/context.dart';
@@ -13,7 +14,7 @@ class DashboardBackground extends StatelessWidget {
         width: getScreenWidth(context),
         height: getScreenHeight(context),
         decoration: const BoxDecoration(
-          color: Color(0xFFF4F8F9),
+          color: Colors.white,
         ),
       ),
     );
